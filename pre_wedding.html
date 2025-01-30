@@ -9,28 +9,19 @@
 <body>
     <h1>Pré-Wedding</h1>
     <div class="container">
-        
         <div class="carousel">
-            <div class="carousel-inner">
-                <img src="fotos/foto1.jpg" alt="Foto 1">
-                <img src="fotos/foto2.jpg" alt="Foto 2">
-                <img src="fotos/foto3.jpg" alt="Foto 3">
-            </div>
+            <img src="fotos/foto1.jpg" alt="Foto 1">
+            <img src="fotos/foto2.jpg" alt="Foto 2">
+            <img src="fotos/foto3.jpg" alt="Foto 3">
         </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </div>
-    <script>
-        let index = 0;
-        function moveSlide(direction) {
-            const slides = document.querySelector('.carousel-inner');
-            const totalSlides = slides.children.length;
-            index = (index + direction + totalSlides) % totalSlides;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-        }
-    </script>
+
     <footer>
         <a href="index.html">Voltar</a>
     </footer>
+
+    <script src="carrossel_pre.js"></script>
 </body>
 </html>

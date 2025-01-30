@@ -1,69 +1,62 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url(fotos/casal3.jpeg); /* Caminho da imagem */
-    background-size: cover;  /* Faz a imagem cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição */
-    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    background-image: url(fotos/casal3.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #5a2a2a;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-.container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-    overflow: hidden;
-    position: relative;
-    display: flex;         /* Usa flexbox */
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Centraliza verticalmente */
-}
-
-.container img {
-    max-width: 100%;       /* Garante que a imagem não ultrapasse o container */
-    height: auto;          /* Mantém a proporção da imagem */
-}
-
 
 h1 {
     font-size: 2em;
     color: #8a4b4b;
     margin-top: 50px;
-    margin-bottom: 10%;
 }
 
-.carousel {
-    width: 50%;
+.container {
+    width: 80%;
+    max-width: 700px;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-inner {
+.carousel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease;
 }
 
-.carousel-inner img {
+.carousel img {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:not(.active) {
+    transform: scale(0.8);
+}
+
+.carousel img.active {
+    transform: scale(1);
 }
 
 button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.534);
+    background-color: rgba(255, 255, 255, 0.6);
     border: none;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 24px;
     border-radius: 50%;
     transition: background 0.3s;
 }
@@ -78,14 +71,4 @@ button:hover {
 
 .next {
     right: 10px;
-}
-
-footer {
-    margin-top: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #8a4b4b;
-    font-weight: bold;
 }
