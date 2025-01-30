@@ -1,33 +1,17 @@
 let index = 0;
+const slides = document.querySelectorAll('.carousel img');  // Seleciona todas as imagens do carrossel
+const totalSlides = slides.length;
 
-const images = document.querySelectorAll('.carousel img');
-const totalImages = images.length;
-
-function changeImage() {
-    // Remove a classe 'active' de todas as imagens
-    images.forEach((img) => {
-        img.classList.remove('active');
-    });
-
-    // Adiciona a classe 'active' na imagem atual
-    images[index].classList.add('active');
-
-    // Atualiza o índice para a próxima imagem
-    index = (index + 1) % totalImages;
-}
-
-// Inicializa a exibição da primeira imagem
-changeImage();
-
-// Troca de imagem automaticamente a cada 3 segundos
-setInterval(changeImage, 3000);
-
-// Função de controle manual
 function moveSlide(direction) {
-    index = (index + direction + totalImages) % totalImages;
-    changeImage();
+    // Remove a classe 'active' de todas as imagens
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    // Atualiza o índice com base na direção
+    index = (index + direction + totalSlides) % totalSlides;
+
+    // Adiciona a classe 'active' à imagem atual
+    slides[index].classList.add('active');
 }
 
-// Adiciona os botões para navegar manualmente (opcional)
-document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+// Inicia o carrossel com a primeira imagem visível
+moveSlide(0);
