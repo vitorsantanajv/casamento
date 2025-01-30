@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fbe3e8;
+    color: #5a2a2a;
+    margin: 0;
+    padding: 0;
+}
+.tangerine-regular {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.foto-casal {
+    width: 100%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-family: "Tangerine", serif;
+    font-weight: 900;
+    font-style:normal;
+    font-size: 80px;
+    margin: 50px 0;
+    margin-bottom: 15%;
+    color: #8a4b4b;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botao {
+    background-color: #d98880;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #c76b6b;
+}

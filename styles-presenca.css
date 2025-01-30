@@ -1,0 +1,18 @@
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d98880;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}

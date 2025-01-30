@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thayza e Vitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stlyles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="foto-casal.jpg" alt="Thaisa e Vitor" class="foto-casal">
+            <h1>Thaísa e Vitor</h1>
+        </header>
+        <nav>
+            <button class="botao" onclick="irPara('lista-presentes.html')">🎁 Lista de Presentes</button>
+            <button class="botao" onclick="irPara('confirme-presenca.html')">📝 Confirme sua Presença</button>
+            <button class="botao" onclick="irPara('pre_wedding.html')">📷 Pré-wedding</button>
+            <button class="botao" onclick="irPara('informacoes.html')">ℹ️ Informações Importantes</button>
+        </nav>
+    </div>
+    <script>
+        function irPara(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</body>
+</html>
