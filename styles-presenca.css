@@ -1,6 +1,18 @@
 .container {
     text-align: center;
 }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(fotos/casal3.jpeg); /* Caminho da imagem */
+    background-size: cover;  /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+    color: #5a2a2a;
+    margin: 0;
+    padding: 0;
+}
 
 input {
     padding: 10px;
