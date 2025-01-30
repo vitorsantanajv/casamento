@@ -22,6 +22,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;  /* Ajusta o tamanho conforme o conteúdo */
+    overflow: hidden;  /* Remove qualquer excesso de rolagem dentro do container */
 }
 
 h1 {
@@ -32,12 +34,20 @@ h1 {
 
 .lista-presentes {
     width: 100%;
-    max-height: 80vh;
-    overflow-y: auto;
+    max-height: 80vh;  /* Limita a altura máxima do container para rolar dentro */
+    overflow-y: scroll;  /* Permite a rolagem vertical */
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Adicionando espaçamento entre os produtos */
+    gap: 20px;  /* Adicionando espaçamento entre os produtos */
+    margin-top: 20px;
+    -ms-overflow-style: none;  /* Remove a linha de rolagem no IE */
+    scrollbar-width: none;  /* Remove a linha de rolagem no Firefox */
+}
+
+/* Para Chrome, Safari e Opera */
+.lista-presentes::-webkit-scrollbar {
+    display: none;  /* Remove a linha de rolagem nos navegadores WebKit */
 }
 
 .presente {
@@ -82,18 +92,17 @@ h1 {
     color: #5a2a2a;
 }
 
-footer {
-    margin-top: 10px;
-}
-
-a {
+/* Estilizando o link de voltar como uma seta */
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5em;  /* Tamanho maior para a seta */
+    color: #8a4b4b;
     text-decoration: none;
-    color: white;
-    background-color: #8a4b4b;
-    padding: 8px 12px;
-    border-radius: 8px;
+    transition: color 0.3s;
 }
 
-a:hover {
-    background-color: #6d3a3a;
+.voltar:hover {
+    color: #6d3a3a; /* Muda a cor quando o mouse passar */
 }

@@ -42,16 +42,21 @@ p {
     color: #5a2a2a;
 }
 
+/* Estilizando o link de voltar como uma seta */
 .voltar {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background-color: #8a4b4b;
-    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;  /* Tamanho da seta */
+    color: #8a4b4b;
     text-decoration: none;
-    border-radius: 8px;
 }
 
-.voltar:hover {
-    background-color: #6d3a3a;
+.seta {
+    display: inline-block;
+    transform: translateY(-4px); /* Ajusta a posição da seta verticalmente */
+}
+
+.voltar:hover .seta {
+    color: #6d3a3a;
 }
