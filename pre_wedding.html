@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="styles-pre-wedding.css">
 </head>
 <body>
-    <h1>Pré-Wedding</h1>
-    
-    <!-- Container do carrossel -->
-    <div class="container">
-        <div class="carousel">
-            <img src="fotos/foto1.jpg" alt="Foto 1" class="slide">
-            <img src="fotos/foto2.jpg" alt="Foto 2" class="slide">
-            <img src="fotos/foto3.jpg" alt="Foto 3" class="slide">
-        </div>
-        
-        <!-- Botões de navegação -->
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-    
-    <!-- Rodapé com link de voltar -->
-    <footer>
-        <a href="index.html">Voltar</a>
-    </footer>
+    <!-- Botão de voltar -->
+    <a href="index.html" class="back-button">&#10094;</a>
 
-    <script src="carrossel_pre.js"></script> <!-- Script para o carrossel -->
+    <h1>Pré-Wedding</h1>
+
+    <!-- Galeria de Imagens -->
+    <div class="container">
+        <div class="gallery">
+            <img src="fotos/foto1.jpg" alt="Foto 1" class="active">
+            <img src="fotos/foto2.jpg" alt="Foto 2">
+            <img src="fotos/foto3.jpg" alt="Foto 3">
+        </div>
+
+        <!-- Botões de Navegação -->
+        <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+        <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+    </div>
+
+    <script src="script_pre.js"></script> <!-- Arquivo JS -->
 </body>
 </html>
