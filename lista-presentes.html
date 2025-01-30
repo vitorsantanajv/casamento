@@ -10,67 +10,87 @@
     <div class="container">
         <h1>Lista de Presentes</h1>
         <div class="lista-presentes">
-            <div class="presente" onclick="mostrarDetalhes('presente1.jpg', 'Produto 1', 'R$ 150,00')">
-                <img src="presente1.jpg" alt="Presente 1">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto1.jpg', 'Produto 1', 'R$ 150,00')">
+                <img src="fotos/foto1.jpg" alt="Presente 1">
                 <div class="detalhes">
                     <p class="nome">Produto 1</p>
                     <p class="preco">R$ 150,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente2.jpg', 'Produto 2', 'R$ 200,00')">
-                <img src="presente2.jpg" alt="Presente 2">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto2.jpg', 'Produto 2', 'R$ 200,00')">
+                <img src="fotos/foto2.jpg" alt="Presente 2">
                 <div class="detalhes">
                     <p class="nome">Produto 2</p>
                     <p class="preco">R$ 200,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente3.jpg', 'Produto 3', 'R$ 180,00')">
-                <img src="presente3.jpg" alt="Presente 3">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
                 <div class="detalhes">
                     <p class="nome">Produto 3</p>
                     <p class="preco">R$ 180,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente2.jpg', 'Produto 2', 'R$ 200,00')">
-                <img src="presente4.jpg" alt="Presente 4">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
                 <div class="detalhes">
-                    <p class="nome">Produto 4</p>
-                    <p class="preco">R$ 200,00</p>
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente2.jpg', 'Produto 2', 'R$ 200,00')">
-                <img src="presente5.jpg" alt="Presente 5">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
                 <div class="detalhes">
-                    <p class="nome">Produto 24</p>
-                    <p class="preco">R$ 200,00</p>
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente2.jpg', 'Produto 2', 'R$ 200,00')">
-                <img src="presente6.jpg" alt="Presente 6">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
                 <div class="detalhes">
-                    <p class="nome">Produto 6</p>
-                    <p class="preco">R$ 200,00</p>
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
                 </div>
             </div>
-            <div class="presente" onclick="mostrarDetalhes('presente2.jpg', 'Produto 2', 'R$ 200,00')">
-                <img src="presente7.jpg" alt="Presente 7">
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
                 <div class="detalhes">
-                    <p class="nome">Produto 7</p>
-                    <p class="preco">R$ 200,00</p>
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
                 </div>
             </div>
-            <!-- Mais produtos aqui... -->
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
+                <div class="detalhes">
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
+                </div>
+            </div>
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
+                <div class="detalhes">
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
+                </div>
+            </div>
+            <div class="presente" onclick="mostrarDetalhes('fotos/foto3.jpg', 'Produto 3', 'R$ 180,00')">
+                <img src="fotos/foto3.jpg" alt="Presente 3">
+                <div class="detalhes">
+                    <p class="nome">Produto 3</p>
+                    <p class="preco">R$ 180,00</p>
+                </div>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
         </div>
     </div>
-   
-        <a href="index.html" class="voltar">
-            <span class="seta">&#8592;</span> <!-- Seta para a esquerda -->
-        </a>
-        
-    
+
+    <a href="index.html" class="voltar">
+        <span class="seta">&#8592;</span> <!-- Seta para a esquerda -->
+    </a>
 
     <script>
         function mostrarDetalhes(imagem, nome, preco) {
+            // Passando os dados para a URL de detalhes
             window.location.href = `detalhes.html?imagem=${imagem}&nome=${encodeURIComponent(nome)}&preco=${encodeURIComponent(preco)}`;
         }
     </script>
