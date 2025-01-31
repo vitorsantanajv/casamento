@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stlyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Player de música -->
+    <audio id="audio-player" controls autoplay loop>
+        <source src="musica/alianca.mp3" type="audio/mp3">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+
     <div class="container">
         <header>
-            
             <h1>Thaísa e Vitor</h1>
         </header>
         <nav>
@@ -22,6 +27,7 @@
             <button class="botao" onclick="irPara('informacoes.html')">ℹ️ Informações Importantes</button>
         </nav>
     </div>
+
     <script>
         function irPara(pagina) {
             window.location.href = pagina;
